@@ -1,13 +1,14 @@
 * {
     box-sizing: border-box;
 }
-  
+
 html,
 body {
     margin: 0;
     padding: 0;
 }
 
+.container,
 .section1,
 .section2,
 .section3 {
@@ -15,5 +16,9 @@ body {
     margin: 0 auto;
 }
 
+.navigation {
+    max-width: 1440px;
+    margin: 0 auto;
 
+}
 
