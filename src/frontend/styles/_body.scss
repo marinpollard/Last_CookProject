@@ -1,0 +1,150 @@
+.wrapper {
+    width: 100%;
+    height: auto;
+  
+    position: absolute;
+    top: 0;
+  
+    background-color: $color-background-gray;
+    box-sizing: border-box;
+
+    .section1,
+    .section2,
+    .section3 {
+        padding: 1rem;
+    }
+
+    .section1,
+    .section2,
+    .section3 {
+
+        .title {
+            font-size: 21px;
+            font-weight: 700;
+            padding-left: 1.5rem;
+            
+            margin: 1.5rem auto 1.5rem 1.5rem;
+
+            color: $color-white;
+  
+            border-left: 3px solid $color-green1;
+        }
+
+        .product {
+
+            display: inline-block;
+            max-width: 20rem;
+            height: auto;
+
+            margin-left: 0.5rem;
+            margin-top: 1rem;
+            
+            text-align: left;
+            
+            transition: all .5s;
+            background-color: $color-background-gray-less;
+
+            border-radius: 10px;
+
+            &__image {
+                position: relative;
+                padding: 0;
+                margin: 0;
+
+                .img {
+                    max-width: 20rem;
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                }
+
+            }
+            
+
+            &__text {
+
+                background-color: $color-background-gray-less;
+                padding: 1rem 1rem 1rem 1rem;
+                border-radius: 10px;
+                margin: 0;
+
+                .card {
+
+                    display: flex;
+                    justify-content: space-between; 
+    
+                    .name {
+                        color: $color-white;
+                        font-size: 22px;
+                        font-weight: 700;
+                        float: left;
+                    }
+    
+                    .mass {
+                        color: $color-navigation-gray;
+                        font-size: 12px;
+                        float: right;
+                        padding-top: 0.5rem;
+                    }
+                }
+    
+                .description {
+
+                    color: $color-navigation-gray;
+                    font-size: 13px;
+                    padding: 1.5rem 2rem 1.5rem 0;
+                    min-height: 80px;
+                }
+    
+                .choice {
+    
+                    display: flex;
+                    justify-content: space-between;
+                    
+    
+                    .price {
+                        color: $color-white;
+                        font-size: 20px;
+                        font-weight: 600;
+                        float: left;
+                        
+
+                        padding-top: 1rem; 
+                    }
+    
+                    .button {
+                        display: flex;
+                        float: right;
+
+                        justify-content: space-between;
+
+                        padding: 1rem 1rem;
+
+                        background: linear-gradient(114.93deg, $color-green1 5.11%, $color-green2 94%);
+                        border-radius: 10px;
+
+                        .btb {
+                            
+                            display: inline-block;
+                            
+                            font-size: 14px;
+                            color: $color-white;
+                            font-weight: 600;
+                            padding-right: 1rem; 
+                        }
+                        
+                        .btb2 {
+                            width: 1.3rem;
+                            height: 1.3rem;
+                            float: right;
+                            
+                        }
+                    }
+                } 
+            }
+        }
+    }
+}
+    
+
+    
+
