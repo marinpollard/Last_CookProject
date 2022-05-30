@@ -9,7 +9,10 @@ body {
   padding: 0;
 }
 
-.container {
+.container,
+.section1,
+.section2,
+.section3 {
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -263,4 +266,166 @@ body {
   -webkit-transition: all .5s;
   transition: all .5s;
 }
-/*# sourceMappingURL=styles.css.map */
+  
+h1 {
+  color: #000000;
+}
+
+.wrapper {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  background-color: #403C3B;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrapper .section1,
+.wrapper .section2,
+.wrapper .section3 {
+  padding: 1rem;
+}
+
+.wrapper .section1 .title,
+.wrapper .section2 .title,
+.wrapper .section3 .title {
+  font-size: 21px;
+  font-weight: 700;
+  padding-left: 1.5rem;
+  margin: 1.5rem auto 1.5rem 1.5rem;
+  color: #ffffff;
+  border-left: 3px solid #72A479;
+}
+
+.wrapper .section1 .product,
+.wrapper .section2 .product,
+.wrapper .section3 .product {
+  display: inline-block;
+  max-width: 20rem;
+  height: auto;
+  margin-left: 0.5rem;
+  margin-top: 1rem;
+  text-align: left;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  background-color: #504B4A;
+  border-radius: 10px;
+}
+
+.wrapper .section1 .product__image,
+.wrapper .section2 .product__image,
+.wrapper .section3 .product__image {
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper .section1 .product__image .img,
+.wrapper .section2 .product__image .img,
+.wrapper .section3 .product__image .img {
+  max-width: 20rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.wrapper .section1 .product__text,
+.wrapper .section2 .product__text,
+.wrapper .section3 .product__text {
+  background-color: #504B4A;
+  padding: 1rem 1rem 1rem 1rem;
+  border-radius: 10px;
+  margin: 0;
+}
+
+.wrapper .section1 .product__text .card,
+.wrapper .section2 .product__text .card,
+.wrapper .section3 .product__text .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrapper .section1 .product__text .card .name,
+.wrapper .section2 .product__text .card .name,
+.wrapper .section3 .product__text .card .name {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 700;
+  float: left;
+}
+
+.wrapper .section1 .product__text .card .mass,
+.wrapper .section2 .product__text .card .mass,
+.wrapper .section3 .product__text .card .mass {
+  color: #CFCFCF;
+  font-size: 12px;
+  float: right;
+  padding-top: 0.5rem;
+}
+
+.wrapper .section1 .product__text .description,
+.wrapper .section2 .product__text .description,
+.wrapper .section3 .product__text .description {
+  color: #CFCFCF;
+  font-size: 13px;
+  padding: 1.5rem 2rem 1.5rem 0;
+  min-height: 80px;
+}
+
+.wrapper .section1 .product__text .choice,
+.wrapper .section2 .product__text .choice,
+.wrapper .section3 .product__text .choice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrapper .section1 .product__text .choice .price,
+.wrapper .section2 .product__text .choice .price,
+.wrapper .section3 .product__text .choice .price {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+  float: left;
+  padding-top: 1rem;
+}
+
+.wrapper .section1 .product__text .choice .button,
+.wrapper .section2 .product__text .choice .button,
+.wrapper .section3 .product__text .choice .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: right;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem 1rem;
+  background: linear-gradient(114.93deg, #72A479 5.11%, #618967 94%);
+  border-radius: 10px;
+}
+
+.wrapper .section1 .product__text .choice .button .btb,
+.wrapper .section2 .product__text .choice .button .btb,
+.wrapper .section3 .product__text .choice .button .btb {
+  display: inline-block;
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: 600;
+  padding-right: 1rem;
+}
+
+.wrapper .section1 .product__text .choice .button .btb2,
+.wrapper .section2 .product__text .choice .button .btb2,
+.wrapper .section3 .product__text .choice .button .btb2 {
+  width: 1.3rem;
+  height: 1.3rem;
+  float: right;
+}
