@@ -1,0 +1,260 @@
+.header {
+    width: 100%;
+    height: auto;
+  
+    // position: absolute;
+    top: 0;
+  
+    background-color: $color-background-gray;
+  
+    &__head {
+        .logo {
+
+            display: inline-block;
+            width: 20%;
+            padding: 0 5rem;
+  
+            &__title {
+            color: $color-white;
+            font-size: 25px;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            }
+        }
+  
+        .search {
+            position: relative;
+  
+            display: inline-block;
+            width: 40%;
+            padding: 1.3rem;
+  
+            &:after {
+                content: url('../img/Search.png');
+                width: 1rem;
+                height: 1rem;
+  
+                position: absolute;
+                top: 2.8rem;
+                right: 3rem;
+            }
+  
+            &:before {
+                content: url('../img/Location.png');
+                width: 1rem;
+                height: 1rem;
+  
+                position: absolute;
+                top: 2.8rem;
+                left: 3rem;
+  
+                z-index: 5;
+            }
+  
+            input::placeholder {
+                font-size: 18px;
+                font-weight: 400;
+                color: $color-navigation-gray;
+            }
+  
+            &__input {
+                position: relative;
+                display: inline-block;
+                width: 100%;
+                padding: 1.5rem 4rem;
+  
+                border: 2px solid $color-background-gray-less;
+                border-radius: 10px;
+  
+                color: $color-white;
+                background-color: $color-background-gray-less;
+                outline: none;
+            }
+        }
+  
+        .contacts {
+                display: inline-block;
+                width: 20%;
+                margin-left: 1rem;
+                align-items: center;
+                padding: 1.5rem;
+                margin: 1rem;
+  
+                &__image {
+                    
+                    position: relative;
+  
+                    width: 2.3rem;
+                    height: 2.3rem;
+                    margin-right: 1rem;
+                    float: left;
+  
+                    background: linear-gradient(114.93deg, $color-green1 5.11%, $color-green2 94%);
+                    border-radius: 50%;
+  
+                    img {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        margin: 0 auto;
+  
+                        transform: translate(-50%, -50%);
+                    }
+                }
+
+                &__container {
+                    display: inline-block;
+                    align-items: center;
+                    
+                    
+                }
+          
+                &__title {
+                    color: $color-navigation-gray;
+                    font-size: 10px;
+                    
+                }
+          
+                &__phone {
+    
+                  a {
+                      color: $color-white;
+                      text-decoration: none;
+                      list-style: none;
+                      font-weight: 1000;
+          
+                    &:hover {
+                        color: $color-navigation-gray;
+                        cursor: pointer;
+                        transition: all .5s;
+                    }
+                  }
+                }
+            }
+  
+        .basket {
+            display: inline-block;
+            padding: 1.3rem 1.5rem;
+  
+            background: linear-gradient(114.93deg, $color-green1 5.11%, $color-green2 94%);
+            border-radius: 10px;
+  
+            &__title {
+                display: inline-block;
+                font-size: 14px;
+                color: $color-white;
+                font-weight: 700;
+                padding-right: 1rem;
+
+                border-right: 0.1rem solid $color-white;         
+            }
+            
+
+            &__circle {
+                width: 1.3rem;
+                height: 1.3rem;
+                margin-left: 1rem;
+                float: right;
+  
+                background: $color-white;
+                border-radius: 50%;
+            
+
+                .count {
+                    position: absolute;
+                    margin: 0 auto;
+                    font-weight: 800;
+                    font-size: 12px;
+  
+                    transform: translate(83%, 23%);
+                }
+            }
+        }
+    }
+  
+    &__banner {
+        &.banner {
+            padding: 10rem;
+  
+            background-image: url('../img/Mask\ Group.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+  
+        .banner {
+            &__title {
+                max-width: 51rem;
+  
+                color: $color-white;
+                font-size: 67px;
+                font-weight: 1000;
+                font-style: italic;
+
+                text-align: center;
+                  
+                transform: rotate(-8.5deg);
+            }
+  
+            &__description {
+                max-width: 20rem;
+                margin-left: 17rem;
+                padding: .5rem;
+  
+                font-size: 25px;
+                font-weight: 1000;
+  
+                text-align: center;
+                color: $color-white;
+                font-style: italic;
+  
+                transform: rotate(-8.5deg);
+  
+                background: linear-gradient(114.93deg, $color-green1 5.11%, $color-green2 94%);
+            }
+        }
+    }
+
+    &__navigation {
+    
+        .navigation {
+
+            &__lists {
+
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 5rem;
+
+                font-size: 18px;
+                color: #ffffff;
+                font-weight: 500;
+            }
+        
+            &__list {
+
+                display: flex;
+                padding: .5rem;
+                
+  
+                list-style: none;
+            }
+        
+            &__link {
+
+            text-decoration: none;
+            font-weight: bold;
+            color: $color-navigation-gray;
+
+            transition: all .5s;
+
+            &:hover {
+                color: $color-white;
+                cursor: pointer;
+                transition: all .5s;
+            }
+        
+            }
+        }
+    }
+}
