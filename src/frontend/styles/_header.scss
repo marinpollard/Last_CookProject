@@ -2,7 +2,7 @@
     width: 100%;
     height: auto;
   
-    // position: absolute;
+    
     top: 0;
   
     background-color: $color-background-gray;
@@ -224,11 +224,14 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                padding: 0 5rem;
-
+                padding: 1rem;
+                margin: 0;
+                
                 font-size: 18px;
                 color: #ffffff;
                 font-weight: 500;
+
+                border-bottom: .05rem solid $color-navigation-gray;
             }
         
             &__list {
@@ -240,7 +243,7 @@
                 list-style: none;
             }
         
-            &__link {
+          &__link {
 
             text-decoration: none;
             font-weight: bold;
@@ -254,7 +257,7 @@
                 transition: all .5s;
             }
         
-            }
+          }
         }
-    }
+      }
 }
