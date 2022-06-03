@@ -2,7 +2,7 @@
     width: 100%;
     height: auto;
   
-    position: absolute;
+    // position: absolute;
     top: 0;
   
     background-color: $color-background-gray;
@@ -240,7 +240,7 @@
                 list-style: none;
             }
         
-          &__link {
+            &__link {
 
             text-decoration: none;
             font-weight: bold;
@@ -254,7 +254,7 @@
                 transition: all .5s;
             }
         
-          }
+            }
         }
-      }
+    }
 }

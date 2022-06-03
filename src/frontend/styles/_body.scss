@@ -2,21 +2,17 @@
     width: 100%;
     height: auto;
   
-    position: absolute;
-    top: 0;
-  
-    background-color: $color-background-gray;
+    background: linear-gradient(360deg, $color-black-more 0%, $color-black-less 100%);
     box-sizing: border-box;
 
-    .section1,
-    .section2,
-    .section3 {
-        padding: 1rem;
-    }
+    margin-top: -.5rem;
 
     .section1,
     .section2,
     .section3 {
+
+        padding: 1rem;
+        border-bottom: .05rem solid $color-navigation-gray;
 
         .title {
             font-size: 21px;
@@ -30,120 +26,267 @@
             border-left: 3px solid $color-green1;
         }
 
-        .product {
+        .line {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
 
-            display: inline-block;
-            max-width: 20rem;
-            height: auto;
+            .product {
 
-            margin-left: 0.5rem;
-            margin-top: 1rem;
-            
-            text-align: left;
-            
-            transition: all .5s;
-            background-color: $color-background-gray-less;
-
-            border-radius: 10px;
-
-            &__image {
-                position: relative;
-                padding: 0;
-                margin: 0;
-
-                .img {
-                    max-width: 20rem;
-                    border-top-left-radius: 10px;
-                    border-top-right-radius: 10px;
-                }
-
-            }
-            
-
-            &__text {
-
+                display: inline-block;
+                max-width: 20rem;
+                height: auto;
+    
+                margin-left: 0.5rem;
+                margin-top: 1rem;
+                
+                text-align: left;
+                
+                transition: all .5s;
                 background-color: $color-background-gray-less;
-                padding: 1rem 1rem 1rem 1rem;
+    
                 border-radius: 10px;
-                margin: 0;
-
-                .card {
-
-                    display: flex;
-                    justify-content: space-between; 
     
-                    .name {
-                        color: $color-white;
-                        font-size: 22px;
-                        font-weight: 700;
-                        float: left;
+                &__image {
+                    position: relative;
+                    padding: 0;
+                    margin: 0;
+    
+                    .img {
+                        max-width: 20rem;
+                        border-top-left-radius: 10px;
+                        border-top-right-radius: 10px;
                     }
     
-                    .mass {
-                        color: $color-navigation-gray;
-                        font-size: 12px;
-                        float: right;
-                        padding-top: 0.5rem;
-                    }
                 }
+                
     
-                .description {
-
-                    color: $color-navigation-gray;
-                    font-size: 13px;
-                    padding: 1.5rem 2rem 1.5rem 0;
-                    min-height: 80px;
-                }
+                &__text {
     
-                .choice {
+                    background-color: $color-background-gray-less;
+                    padding: 1rem 1rem 1rem 1rem;
+                    border-radius: 10px;
+                    margin: 0;
     
-                    display: flex;
-                    justify-content: space-between;
-                    
+                    .card {
     
-                    .price {
-                        color: $color-white;
-                        font-size: 20px;
-                        font-weight: 600;
-                        float: left;
-                        
-
-                        padding-top: 1rem; 
-                    }
-    
-                    .button {
                         display: flex;
-                        float: right;
-
-                        justify-content: space-between;
-
-                        padding: 1rem 1rem;
-
-                        background: linear-gradient(114.93deg, $color-green1 5.11%, $color-green2 94%);
-                        border-radius: 10px;
-
-                        .btb {
-                            
-                            display: inline-block;
-                            
-                            font-size: 14px;
+                        justify-content: space-between; 
+        
+                        .name {
                             color: $color-white;
-                            font-weight: 600;
-                            padding-right: 1rem; 
+                            font-size: 22px;
+                            font-weight: 700;
+                            float: left;
                         }
-                        
-                        .btb2 {
-                            width: 1.3rem;
-                            height: 1.3rem;
+        
+                        .mass {
+                            color: $color-navigation-gray;
+                            font-size: 12px;
                             float: right;
-                            
+                            padding-top: 0.5rem;
                         }
                     }
-                } 
+        
+                    .description {
+    
+                        color: $color-navigation-gray;
+                        font-size: 13px;
+                        padding: 1.5rem 2rem 1.5rem 0;
+                        min-height: 80px;
+                    }
+        
+                    .choice {
+        
+                        display: flex;
+                        justify-content: space-between;
+                        
+        
+                        .price {
+                            color: $color-white;
+                            font-size: 20px;
+                            font-weight: 600;
+                            float: left;
+                            
+    
+                            padding-top: 1rem; 
+                        }
+        
+                        .button {
+                            display: flex;
+                            float: right;
+    
+                            justify-content: space-between;
+    
+                            padding: 1rem 1rem;
+    
+                            background: linear-gradient(114.93deg, $color-green1 5.11%, $color-green2 94%);
+                            border-radius: 10px;
+    
+                            .btb {
+                                
+                                display: inline-block;
+                                
+                                font-size: 14px;
+                                color: $color-white;
+                                font-weight: 600;
+                                padding-right: 1rem; 
+                            }
+                            
+                            .btb2 {
+                                width: 1.3rem;
+                                height: 1.3rem;
+                                float: right;
+                                
+                            }
+                        }
+                    } 
+                }
             }
         }
     }
+
+    .section3 {
+        padding-bottom: 6rem;
+    }
+
+    .section4 {
+        display: flex;
+        
+
+        background-image: url("../img/Mask\ Group2.png");
+        background-size: cover;
+
+        background-repeat: no-repeat;
+
+        justify-content: space-between;
+
+
+        .positioning {
+
+            display: flex;
+            justify-content: space-around;
+
+            padding: 5rem;
+
+            gap: 10rem;
+
+            &__text {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                                     
+                gap: 2rem;
+                margin: 2rem;
+    
+                .title {
+                    color: $color-white;
+                    font-size: 32px;
+                    font-weight: bolder;
+
+                }
+    
+                .definition {
+    
+                    color: $color-navigation-gray;
+                    font-size: 20px;
+                    font-weight: 400;
+                    padding-bottom: 2rem;
+    
+                }
+
+                .key {
+
+                    display: flex;
+                    justify-content: flex-end;
+
+                    width: 15rem;
+    
+                    padding: 1.5rem;
+    
+                    background-color: $color-gray-section4;
+                    border: 1px solid $color-gray-section4more;
+                    border-radius: 10px;
+
+
+                    &__btn {
+                        color: $color-white;
+                        font-size: 13px;
+                        font-weight: 700;
+                    }
+                }
+    
+            }
+    
+            &__pins {
+    
+                display: flex;
+                justify-items: center;
+    
+                    
+                .column {
+                    display: flex;
+                    flex-direction: column;
+
+                    
+                    
+    
+                    .pin {
+    
+                        display: flex;
+                        flex-direction: column;
+                        align-content: center;
+                        justify-content: space-evenly;
+
+                        gap: 4rem;
+
+                        width: 228px;
+                        height: 227px;
+             
+                        
+                        margin: .5rem;
+        
+                        background-color: $color-gray;
+                        
+                        .icon {
+                            display: flex;
+                            
+                            align-items: center;
+                            justify-content: center;
+                        }
+
+                        .icon1 {
+                            height: 60px;
+                            width: 70px;
+                            transform: translate(110%, 80%);
+                        }
+
+                        .icon2 {
+                            height: 60px;
+                            width: 38px;
+                            transform: translate(250%, 80%);
+                        }
+                        
+                        .name {
+                            display: flex;
+                            color: $color-white;
+                            align-items: center;
+                            justify-content: center;
+                            font-size: 18px;
+                        }                
+                    }
+    
+                }
+    
+                
+            }
+        }
+    }
+    
 }
+    
+    
+    
     
 
     
